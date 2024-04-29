@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <title>Glow Cosméticos</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imgs/baner3.png">      
+        </div>    
+        
+        <div class="busca">
+            <img src="imgs/Busca.png">
+        </div>
+       
+        <div class="suporte">
+            <a class="whats" href="https://api.whatsapp.com/send?l=pt&phone=55{{link}}">
+                <img src="imgs/Group 20.png"> 
+            </a>    
+        </div>           
+
+        <div class="login">
+            <img src="imgs/Group 15.png">
+        </div>
+     
+        <div id="ajax-cart" class="carrinho">
+            <a href="#" class="js-modal-open js-toggle-cart" data-toggle="#modal-cart">
+                <img src="imgs/Buying.png" class="img-fluid" />
+                <span class="js-cart-widget-amount cart-widget-amount"></span>
+            </a>
+        </div>
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Lançamentos</a></li>
+            <li><a href="#">Presentes</a></li>
+            <li><a href="#">Perfumaria</a></li>
+            <li><a href="#">Corpo e Banho</a></li>
+            <li><a href="#">Make</a></li>
+            <li><a href="#">Casa</a></li>
+            <li><a href="#">Aumigos</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <img src="imgs/banner.png">
+    </section>
+
+    <section class="ofertas">
+        DIA DAS MÃES
+    </section>
+   
+
+    <section class="main-products">
+
+        <article class="product" id="product-1">
+            <img src="imgs/kitlily.jpg">
+            <h3 class="price-product">
+                R$ <span>309.90</span>
+            </h3>
+            <p class="name-product">Kit presente dia das mães Lily</p>
+            <div class="quantity">
+                <span>Quantidade:</span>
+                <button class="minus" onclick="minus(1)">-</button>
+                <input id="value-quantity-1" type="text" value="1" disabled>
+                <button class="plus" onclick="plus(1)">+</button>
+            </div>
+            <button class="buy" onclick="buyProduct(1)">Comprar</button>
+        </article>
+
+        <article class="product" id="product-2">
+            <img src="imgs/kitegeo.jpg">
+            <h3 class="price-product">R$ <span>194.90</span></h3>
+            <p class="name-product">Presente Dia das Mães Egeo Dolce</p>
+            <div class="quantity">
+                <span>Quantidade:</span>
+                <button class="minus" onclick="minus(2)">-</button>
+                <input id="value-quantity-2" type="text" value="1" disabled>
+                <button class="plus" onclick="plus(2)">+</button>
+            </div>
+            <button class="buy" onclick="buyProduct(2)">Comprar</button>
+        </article>
+
+        <article class="product" id="product-3">
+            <img src="imgs/kitred.jpg">
+            <h3 class="price-product">R$ <span>229.90</span></h3>
+            <p class="name-product">Presente Dia das Mães Floratta Red</p>
+            <div class="quantity">
+                <span>Quantidade:</span>
+                <button class="minus" onclick="minus(3)">-</button>
+                <input id="value-quantity-3" type="text" value="1" disabled>
+                <button class="plus" onclick="plus(3)">+</button>
+            </div>
+            <button class="buy" onclick="buyProduct(3)">Comprar</button>
+        </article>
+
+        <article class="product" id="product-4">
+            <img src="imgs/kithercode.jpg">
+            <h3 class="price-product">R$ <span>186,92</span></h3>
+            <p class="name-product">Presente Dia das Mães Her Code</p>
+            <div class="quantity">
+                <span>Quantidade:</span>
+                <button class="minus" onclick="minus(4)">-</button>
+                <input id="value-quantity-4" type="text" value="1" disabled>
+                <button class="plus" onclick="plus(4)">+</button>
+            </div>
+            <button class="buy" onclick="buyProduct(4)">Comprar</button>
+        </article>
+
+    </section>
+
+    <footer></footer>
+
+    <script src="scriptsapi.js"></script>
+</body>
+
+</html>

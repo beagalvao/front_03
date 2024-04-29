@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: white;
+    display: flex;
+}
+
+.logo img {   
+    width: 200px;
+    height: 150px;   
+}
+
+.busca img {   
+    width: 400px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.suporte img {
+    width: 150px;
+    margin-top: 45px;
+    margin-left: 50px;
+}
+
+.login img {
+    width: 200px;
+    margin-top: 45px;
+    margin-left: 50px;
+}
+
+.carrinho img{
+    width: 60px;
+    margin-top: 45px;
+    margin-left: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #F5B5C5;
+    overflow: hidden;
+    height: 50px;
+    padding: 0;
+    margin-top: 160px;
+}
+nav a {
+    color: white;
+    padding: 16px;
+    display:block;   
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #5ED5CF;
+    color: #FFFFFF;  
+}
+
+nav li {
+    float:left;
+    margin: 1px 50px 50px;
+}
+.banner img {
+    width: 100%;
+    height: 500px;
+    margin:0;
+}
+
+.ofertas {
+    list-style-type: none;
+    width: 60%;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    color:#5ED5CF;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+.main-products {
+    width: 100%;
+    position: relative;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    box-sizing: border-box;
+    flex: 1;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 200px) and (max-width: 501px) {
+    .main-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner img {
+        width: 250px;
+    }
+
+}
+
+@media (min-width:500px) and (max-width: 740px) {
+    .main-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner img {
+        width: 350px;
+    }
+
+}
+
+@media (min-width:741px) and (max-width: 1000px) {
+    .main-products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .banner img {
+        width: 500px;
+    }
+
+}
+
+.product {
+    width: 240px;
+    box-sizing: border-box;
+    height: 320px;
+    margin: 20px;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 18px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.product img {
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    justify-self: center;
+}
+
+.price-product {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px;
+    padding: 30px 0px 5px;
+}
+
+.name-product {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    color: #707070;
+}
+
+
+.minus,
+.plus {
+    width: 20px;
+    margin: 2px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 100px;
+}
+
+.quantity span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #727272;
+}
+
+.quantity input {
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    width: 30px;
+    height: 21px;
+    border: 0.5px solid #D9D9D9;
+}
+
+.buy {
+    background-color:#5ED5CF;
+    border: 1px solid #5ED5CF;
+    box-sizing: border-box;
+    width: 87px;
+    height: 32px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 2px;
+    color: white;
+    font-weight: 700;
+    justify-self: center;
+    margin-top: 16px;
+}
+
+footer {
+    background-color: #F5B5C5;
+    height: 47px;
+    margin-top: 20px;
+}
+
+.fixed-contact {
+    position: fixed;
+    font-size: 1rem;
+    z-index: 9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 90%;
+}
+
+.fixed-contact.right-position {
+    left: 15px;
+    right: 15px;
+}
+
+.fixed-contact a {
+    width: 30%;
+    height: 64px;
+    fill: #fff;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+    background-color: #25d366;
+}
+
+.fixed-contact a svg {
+    display: block;
+    fill: inherit;
+    width: 10%;
+    height: 64px;
+    display: block;
+    stroke: #fff;
+    stroke-width: 0.065em;
+}
